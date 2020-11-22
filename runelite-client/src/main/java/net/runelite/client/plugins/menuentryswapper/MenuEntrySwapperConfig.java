@@ -200,6 +200,17 @@ public interface MenuEntrySwapperConfig extends Config
 	}
 
 	@ConfigItem(
+			keyName = "swapPickpocket",
+			name = "Pickpocket",
+			description = "Swap Talk-to with Pickpocket",
+			section = npcSection
+	)
+	default boolean swapPickpocket()
+	{
+		return true;
+	}
+
+	@ConfigItem(
 		keyName = "swapCaptainKhaled",
 		name = "Task",
 		description = "Swap Talk-to with Task for Captain Khaled in Port Piscarilius",
