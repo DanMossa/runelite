@@ -30,6 +30,7 @@ public class GraphicID
 	public static final int SPLASH = 85;
 	public static final int TELEPORT = 111;
 	public static final int GREY_BUBBLE_TELEPORT = 86;
+	public static final int GROTESQUE_GUARDIANS_STONE_ORB = 160;
 	public static final int ENTANGLE = 179;
 	public static final int SNARE = 180;
 	public static final int BIND = 181;
@@ -46,6 +47,9 @@ public class GraphicID
 	public static final int STAFF_OF_THE_DEAD = 1228;
 	public static final int IMBUED_HEART = 1316;
 	public static final int FLYING_FISH = 1387;
+	public static final int GROTESQUE_GUARDIANS_LIGHTNING_START = 1416;
+	public static final int GROTESQUE_GUARDIANS_LIGHTNING_END = 1431;
+	public static final int GROTESQUE_GUARDIANS_FALLING_ROCKS = 1436;
 	public static final int NPC_CONTACT = 728;
 	public static final int POT_SHARE = 733;
 	public static final int BAKE_PIE = 746;
