@@ -43,6 +43,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import javax.inject.Inject;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
 import net.runelite.api.ItemComposition;
@@ -77,6 +78,7 @@ import org.apache.commons.lang3.ArrayUtils;
 	tags = {"npcs", "inventory", "items", "objects"},
 	enabledByDefault = false
 )
+@Slf4j
 public class MenuEntrySwapperPlugin extends Plugin
 {
 	private static final String CONFIGURE = "Configure";
@@ -758,7 +760,7 @@ public class MenuEntrySwapperPlugin extends Plugin
 			{
 				int idx = indexes.get(i);
 				MenuEntry entry = entries[idx];
-				String entryTarget = Text.removeTags(entry.getTarget()).toLowerCase();
+				String entryTarget = Text.removeTags(entry.getTarget()).toLowerCase().replaceAll("^\\* *", "");;
 
 				// Limit to the last index which is prior to the current entry
 				if (idx < limit && entryTarget.equals(target))
